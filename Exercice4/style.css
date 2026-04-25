@@ -1,0 +1,15 @@
+/* On donne un style à notre liste */
+#maListe {
+    list-style-type: none; /* On enlève les vilains points noirs */
+    padding: 0;
+}
+
+/* On donne un style à chaque petit élément que le JS va créer */
+li {
+    background-color: #f0f0f0; /* Un gris très clair */
+    margin: 5px 0;             /* Un petit espace entre chaque ligne */
+    padding: 10px;             /* De l'espace pour que le texte respire */
+    border-radius: 8px;        /* Des bords tout doux */
+    border-left: 5px solid #4CAF50; /* Une petite barre verte à gauche */
+    font-family: sans-serif;
+}

@@ -5,7 +5,7 @@ const titre = document.getElementById('monTitre');
 // 2. On écoute quand quelqu'un clique sur le bouton
 bouton.addEventListener('click', function() {
     // Changer le texte
-    titre.innerText = "Bravo ! Le texte a changé.";
+    titre.innerText = "Bravo ! Le texte a changé. Vous venez de réussir votre premier exercice JavaScript !";
     // Changer la couleur en ajoutant la règle CSS qu'on a créée
     titre.classList.add('couleur-bleue');
 });

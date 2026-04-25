@@ -1,0 +1,43 @@
+/* On donne un style à la boîte du formulaire */
+form {
+    background-color: #f0f8ff; /* Bleu très clair */
+    width: 400px; /* Largeur de la boîte */
+    margin: 0 auto; /* Centre la boîte horizontalement */
+    height: auto;
+    padding: 35px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    width: 300px; /* On limite la largeur */
+    font-family: Arial, sans-serif;
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* On espace les étiquettes et les cases */
+label {
+    display: block; /* Met chaque étiquette sur sa propre ligne */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%; /* Les cases prennent toute la largeur de la boîte */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #28a745; /* Bouton vert */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.conteneur {
+    display: flex;
+    justify-content: center; /* Centre le formulaire horizontalement */
+    margin-top: 50px; /* Un peu d'espace en haut */
+}

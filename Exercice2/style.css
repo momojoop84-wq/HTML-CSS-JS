@@ -1,0 +1,115 @@
+/* Le costume normal de la carte */
+.carte-style {
+    width: 250px; /* Largeur de la carte */
+    background-color: lightgrey; /* Gris clair */
+    padding: 20px;
+    border-radius: 15px; /* Bords arrondis comme un jouet */
+    transition: 0.3s; /* Pour que le changement de couleur soit tout doux */
+}
+#lesCartes {
+    display: flex;
+    justify-content: space-between; /* Espace entre les cartes */
+    flex-direction: row;
+    gap: 20px; /* Espace entre les cartes */
+    margin-top: 50px; /* Un peu d'espace en haut */
+    padding: 0 20px; /* Un peu d'espace sur les côtés */
+}
+h1 {
+    font-size: 24px; /* Taille de police pour les titres */
+    color: #000; /* Couleur du texte */
+}
+p {
+    font-size: 16px; /* Taille de police pour les paragraphes */
+    color: #1b1010; /* Couleur du texte */
+}
+
+/* Le costume quand la souris passe dessus (mouseover) */
+.carte-style:hover { 
+    scale: 110%; /* La carte devient plus petite, comme un jouet qui rétrécit ! */
+    height: 200px; /* On fixe la hauteur pour éviter que ça devienne trop grand */
+    background-color: gold; /* Elle devient dorée ! */
+}
+.carte-style button {
+    background-color: #4CAF50; /* Vert pour les boutons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#maCarte4 {
+    background-color: lightblue; /* Bleu clair pour la carte 4 */ 
+}
+
+#maCarte4:hover {
+    background-color: lightcoral; /* Rouge clair quand on passe la souris dessus */
+    scale: 110%; /* La carte devient un peu plus grande, comme un jouet qui s'anime ! */
+}
+
+#maCarte4 button {
+    background-color: #4CAF50; /* Vert pour le bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#maCarte4 button:hover {
+    background-color: #45a049; /* Vert plus foncé quand on passe la souris dessus */
+}
+
+#maCarte4 p{
+    font-size: 16px; /* Taille de police pour le paragraphe */
+    color: #333; /* Couleur du texte */
+}
+
+#maCarte1 {
+    background-color: lightpink; /* Rose clair pour la carte 1 */
+}
+#maCarte2 {
+    background-color: lightgreen; /* Vert clair pour la carte 2 */
+}
+#maCarte3 {
+    background-color: lightyellow; /* Jaune clair pour la carte 3 */
+}
+#maCarte1:hover {
+    background-color: lightcoral; /* Rouge clair quand on passe la souris dessus */
+    scale: 110%; /* La carte devient un peu plus grande, comme un jouet qui s'anime ! */
+}
+#maCarte2:hover {
+    background-color: lightseagreen; /* Vert plus foncé quand on passe la souris dessus */
+    scale: 110%; /* La carte devient un peu plus grande, comme un jouet qui s'anime ! */
+}
+#maCarte3:hover {
+    background-color: rgb(197, 197, 5); /* Jaune plus foncé quand on passe la souris dessus */
+    scale: 110%; /* La carte devient un peu plus grande, comme un jouet qui s'anime ! */
+}
+#maCarte1 button, #maCarte2 button, #maCarte3 button {
+    background-color: #4CAF50; /* Vert pour les boutons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#maCarte1 button:hover, #maCarte2 button:hover, #maCarte3 button:hover,#maCarte button:hover {
+    background-color: #45a049; /* Vert plus foncé quand on passe la souris dessus */
+}
+#maCarte1 p{
+    font-size: 16px; /* Taille de police pour les paragraphes */
+    color: #1a1616; /* Couleur du texte */
+}
+
+#maCarte2 p{
+    font-size: 16px; /* Taille de police pour les paragraphes */
+    color: #1a1616; /* Couleur du texte */
+}
+#maCarte3 p{
+    font-size: 16px; /* Taille de police pour les paragraphes */
+    color: #1a0c0c; /* Couleur du texte */
+}
+#maCarte1 h1, #maCarte2 h1, #maCarte3 h1, #maCarte4 h1 {
+    font-size: 24px; /* Taille de police pour les titres */
+    color: #000; /* Couleur du texte */
+}

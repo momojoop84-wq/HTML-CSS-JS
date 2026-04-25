@@ -1,0 +1,15 @@
+.couleur-bleue {
+    color: blue;
+    font-weight: bold;
+}
+#monBouton {
+    background-color: #4CAF50; /* Vert pour le bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#monBouton:hover {
+    background-color: #45a049; /* Vert plus foncé quand on passe la souris dessus */
+}

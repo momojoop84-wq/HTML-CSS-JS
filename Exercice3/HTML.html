@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="conteneur">
+    <form id="monFormulaire">
+        <!-- Nom -->
+        <label>Ton nom :</label>
+        <input type="text" id="nom" required><br>
+
+        <!-- Âge -->
+        <label>Ton âge :</label>
+        <input type="number" id="age" required><br>
+
+        <!-- Sexe (Boutons radio : un seul choix) -->
+        <label>Tu es :</label>
+        <input type="radio" name="sexe" value="Homme"> Homme
+        <input type="radio" name="sexe" value="Femme"> Femme<br>
+
+        <!-- Loisirs (Cases à cocher : plusieurs choix possibles) -->
+        <label>Tes loisirs :</label>
+        <input type="checkbox" name="loisir" value="Sport"> Sport
+        <input type="checkbox" name="loisir" value="Musique"> Musique
+        <input type="checkbox" name="loisir" value="Jeux Vidéo"> Jeux Vidéo<br>
+
+        <!-- Pays (Liste déroulante) -->
+        <label>Pays :</label>
+        <select id="pays">
+        <option value="France">France</option>
+        <option value="Sénégal">Sénégal</option>
+        <option value="Belgique">Belgique</option>
+        </select><br>
+
+        <!-- Commentaire (Grande case) -->
+        <label>Un petit mot :</label><br>
+        <textarea id="commentaire" rows="4"></textarea><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
