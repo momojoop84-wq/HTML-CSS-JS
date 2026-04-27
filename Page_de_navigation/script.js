@@ -23,7 +23,7 @@ boutonRetour.style.cssText = `
 
 // 4. On lui dit quoi faire quand on clique (aller vers index.html)
 boutonRetour.onclick = function() {
-    window.location.href = "../Page_de_navigation/navigating.html"; // Change l'adresse de la page
+    window.location.href = "../navigating.html"; // Change l'adresse de la page
 };
 
 // 5. On l'ajoute officiellement au corps de la page (body)
