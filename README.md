@@ -72,5 +72,3 @@ NB :
 - Les taches et les utilisateurs sont garder dans le localStorage
 - Le design est laisser a votre appréciation
 - L’application doit être responsive
-
-https://github.com/momojoop84-wq/HTML-CSS-JS/blob/master/navigating.html
