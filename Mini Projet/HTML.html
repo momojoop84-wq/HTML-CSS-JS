@@ -2,21 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Gestion de Tâches</title>
+    <title>Mon Application de Gestion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="app-container">
-        <h1>🚀 Tableau de Bord</h1>
+        <header>
+            <h1>🚀 Centre de Contrôle</h1>
+            <!-- Bouton pour changer le thème (Jour/Nuit) -->
+            <button class="btn btn-dark" onclick="basculerDarkMode()">🌙 Mode Sombre</button>
+        </header>
 
         <!-- SECTION ÉQUIPE -->
         <div class="card">
-            <h2>👥 Gestion de l'Équipe</h2>
+            <h2>👥 Équipe</h2>
             <div class="toolbar">
                 <input type="text" id="nomAmi" placeholder="Nom du membre...">
-                <button class="btn btn-add" onclick="ajouterAmi()">Ajouter Membre</button>
+                <button class="btn btn-add" onclick="ajouterAmi()">Ajouter</button>
             </div>
             <table>
                 <thead>
@@ -32,17 +34,34 @@
 
         <!-- SECTION MISSIONS -->
         <div class="card">
-            <h2>✅ Missions & Tâches</h2>
+            <h2>✅ Missions</h2>
+            
+            <!-- BARRE DE RECHERCHE -->
             <div class="toolbar">
-                <input type="text" id="nomTache" placeholder="Nom de la mission...">
-                <select id="choixAmi"></select>
-                <button class="btn btn-add" onclick="ajouterTache()">Attribuer Mission</button>
+                <input type="text" id="rechercheTache" oninput="dessinerTout()" placeholder="🔍 Rechercher une mission...">
             </div>
+            
+                <!-- FORMULAIRE DE CRÉATION -->
+            <div class="toolbar">
+                <!-- On ne garde que l'essentiel pour créer la mission -->
+                <input type="text" id="nomTache" placeholder="Quelle est la mission ?">
+                
+                <!-- Le menu pour choisir qui va la faire -->
+                <select id="choixAmi"></select>
+                
+                <!-- La date choisie au début -->
+                <input type="date" id="dateLimite">
+                
+                <!-- Le bouton de création simple -->
+                <button class="btn btn-add" onclick="ajouterTache()">Créer la Mission</button>
+            </div>
+
             <table>
                 <thead>
                     <tr>
                         <th>Mission</th>
                         <th>Responsable</th>
+                        <th>Retour d'exécution</th>
                         <th>État</th>
                         <th>Actions</th>
                     </tr>
@@ -51,7 +70,6 @@
             </table>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
